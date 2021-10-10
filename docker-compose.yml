@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  my_app:
+   build: .
+   ports:
+     - "8082:8080"
+  other_app:
+    image: dockerboot11
+    ports:
+      - "8083:8080"
